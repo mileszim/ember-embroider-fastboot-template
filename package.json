@@ -34,6 +34,11 @@
     "@glimmer/tracking": "^1.1.2",
     "@tsconfig/ember": "^2.0.0",
     "@types/ember": "^4.0.3",
+    "@types/ember-data": "^4.4.7",
+    "@types/ember-data__adapter": "^4.0.1",
+    "@types/ember-data__model": "^4.0.0",
+    "@types/ember-data__serializer": "^4.0.1",
+    "@types/ember-data__store": "^4.0.2",
     "@types/ember__application": "^4.0.5",
     "@types/ember__array": "^4.0.3",
     "@types/ember__component": "^4.0.12",
@@ -50,15 +55,7 @@
     "@types/ember__string": "^3.0.10",
     "@types/ember__template": "^4.0.1",
     "@types/ember__test": "^4.0.1",
-    "@types/ember__test-helpers": "^2.9.1",
     "@types/ember__utils": "^4.0.2",
-    "@types/ember-data": "^4.4.7",
-    "@types/ember-data__adapter": "^4.0.1",
-    "@types/ember-data__model": "^4.0.0",
-    "@types/ember-data__serializer": "^4.0.1",
-    "@types/ember-data__store": "^4.0.2",
-    "@types/ember-qunit": "^6.1.1",
-    "@types/ember-resolver": "^9.0.0",
     "@types/qunit": "^2.19.4",
     "@types/rsvp": "^4.0.4",
     "@typescript-eslint/eslint-plugin": "^5.48.2",
@@ -67,9 +64,10 @@
     "concurrently": "^7.6.0",
     "ember-auto-import": "^2.5.0",
     "ember-cli": "~4.10.0",
-    "ember-cli-app-version": "^5.0.0",
+    "ember-cli-app-version": "^6.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-dependency-checker": "^3.3.1",
+    "ember-cli-fastboot": "^4.1.0",
     "ember-cli-htmlbars": "^6.2.0",
     "ember-cli-inject-live-reload": "^2.1.0",
     "ember-cli-sri": "^2.1.1",
@@ -103,5 +101,11 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "fastbootDependencies": [
+    "crypto"
+  ],
+  "peerDependencies": {
+    "@babel/core": "^7.20.12"
   }
 }
